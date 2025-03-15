@@ -1,0 +1,15 @@
+body {
+  background-image: url("https://i.pinimg.com/originals/f2/7d/7e/f27d7ec85dedb8148919b237cd4ea3e8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 100px;
+  background-color: #0000008c;
+  box-shadow: 0 0 10px 0 black;
+}

@@ -1,0 +1,139 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.filterHead {
+    width: 200px;
+    margin-left: 30px;
+    height: 30px;
+    background-color: rgb(78, 78, 78);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.filter {
+    padding-top: 100px;
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.filterHead:hover {
+    background-color: rgb(56, 56, 56);
+    transition: 0.1s;
+}
+
+.filterHead:active {
+    background-color: rgb(83, 83, 83);
+    transition: 0.1s;
+}
+
+.filters {
+    padding-left: 20px;
+    width: 180px;
+    margin-left: 30px;
+    height: 30px;
+    background-color: rgb(124, 124, 124);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.filters:hover {
+    background-color: rgb(102, 102, 102);
+    transition: 0.1s;
+}
+
+.filters:active {
+    background-color: rgb(153, 153, 153);
+    transition: 0.1s;
+}
+
+.genderFilterBody {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(-50px);
+}
+
+.genderFilterBody.open {
+    height: initial;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.statusFilterBody {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(-50px);
+}
+
+.statusFilterBody.open {
+    height: initial;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.locationFilterBody {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(-50px);
+}
+
+.locationFilterBody.open {
+    height: initial;
+    opacity: 1;
+    transform: translateY(0px);
+    overflow-y: scroll;
+    max-height: 250px;
+    margin-right: 40px;
+}
+
+.filters {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filters input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.filters .checkBoxs+span {
+    width: 1rem;
+    height: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2ca8fa;
+    border-radius: 0.25rem;
+    background-color: #121212;
+    transition: all 0.3s ease;
+}
+
+.filters .checkBoxs:checked+span {
+    background-color: #2ca8fa;
+}
+
+.filters .checkBoxs+span svg {
+    fill: #121212;
+    opacity: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.filters .checkBoxs:checked+span svg {
+    opacity: 1;
+}
