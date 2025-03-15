@@ -13,3 +13,4 @@ Currently, two official plugins are available:
 # rickandmortywiki
 # rickandmortywiki
 # rickandmortywiki
+# rickandmortywiki
